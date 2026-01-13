@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: application
+  labels:
+    gateway-access: "true"
+
+---
+# Second namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: route-app
+  labels:
+    gateway-access: "true"
